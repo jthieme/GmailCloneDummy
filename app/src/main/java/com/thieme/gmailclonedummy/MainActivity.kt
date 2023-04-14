@@ -47,9 +47,12 @@ fun GmailApp() {
         },
         bottomBar = {
             HomeBottomMenu()
+        },
+        floatingActionButton = {
+            com.thieme.gmailclonedummy.components.FloatingActionButton(scrollState)
         }
         ) {
-        MailList(paddingValues = it)
+        MailList(paddingValues = it, scrollState)
     }
 }
 
