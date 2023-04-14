@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -13,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.thieme.gmailclonedummy.components.DrawerMenu
 import com.thieme.gmailclonedummy.components.HomeAppBar
 import com.thieme.gmailclonedummy.components.HomeBottomMenu
+import com.thieme.gmailclonedummy.components.MailList
 import com.thieme.gmailclonedummy.ui.theme.GmailCloneDummyTheme
 
 class MainActivity : ComponentActivity() {
@@ -47,7 +49,7 @@ fun GmailApp() {
             HomeBottomMenu()
         }
         ) {
-        
+        MailList(paddingValues = it)
     }
 }
 
