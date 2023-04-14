@@ -1,4 +1,4 @@
-package com.thieme.gmailclonedummy
+package com.thieme.gmailclonedummy.model
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.*
@@ -8,7 +8,7 @@ sealed class DrawerMenuData(
     val icon : ImageVector? = null, val title : String? = null,
     val isDivider : Boolean = false, val isHeader : Boolean = false
 ) {
-    object AllInboxes : DrawerMenuData (
+    object AllInboxes : DrawerMenuData(
         icon = Icons.Outlined.AllInbox,
         title = "All inboxes"
     )

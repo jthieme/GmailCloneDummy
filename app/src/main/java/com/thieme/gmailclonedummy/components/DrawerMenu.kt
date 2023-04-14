@@ -12,7 +12,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.thieme.gmailclonedummy.DrawerMenuData
+import com.thieme.gmailclonedummy.model.DrawerMenuData
 
 @Composable
 fun DrawerMenu(scrollState : ScrollState) {
