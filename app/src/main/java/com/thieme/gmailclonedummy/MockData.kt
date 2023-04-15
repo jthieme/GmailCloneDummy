@@ -1,5 +1,6 @@
 package com.thieme.gmailclonedummy
 
+import com.thieme.gmailclonedummy.model.Account
 import com.thieme.gmailclonedummy.model.MailData
 
 val mailList = listOf(
@@ -74,3 +75,11 @@ val mailList = listOf(
         timeStamp = "20:10"
     )
 )
+
+val accountList = listOf<Account>(
+    Account(icon = R.drawable.dream, userName = "Josh Thieme",
+        email = "jomthieme@gmail.com", unReadMails = 99),
+    Account(userName = "Bob Sagget", email = "saggetMan@gmail.com", unReadMails = 10),
+    Account(userName = "Will Smith", email = "w.smith@gmail.com", unReadMails = 80),
+
+    )
